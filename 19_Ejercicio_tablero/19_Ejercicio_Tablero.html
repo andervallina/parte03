@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+ let Tmñ;
+ Tmñ = prompt("Introduce el tamaño del tablero"); // Preguntamos al usuario el tamaño del tablero
+
+ let resultado = "";
+   for (let x = 1; x <= Tmñ; x = x + 1) { // Creamos un contador para las columnas
+        for (let i = 1; i <= Tmñ; i = i + 1) { // Creamos otro contador para las filas
+                    if ((i+x) % 2 == 0) // Si la suma de fila y columna es un número par sumamos O
+                    {
+                        resultado += "O"; 
+                    }
+                    else if ((i+x) % 2 != 0) // Si la suma de fila y columna es impar sumamos X
+                    {
+                        resultado += "X";
+                    }
+
+            
+        } console.log(resultado); //Mostramos resultado en pantalla 
+        resultado=""; // Volvemos a reiniciar el valor de resultado
+        
+    }
+
+    
+
+
+
+  
+            
+
+            
+
+
+
+
+</script>
